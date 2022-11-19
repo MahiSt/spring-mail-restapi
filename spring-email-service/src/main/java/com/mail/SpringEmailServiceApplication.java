@@ -51,6 +51,8 @@ public class SpringEmailServiceApplication implements CommandLineRunner{
 		fields=Arrays.asList(new Field("leavetype"),new Field("name"),new Field("employer"),new Field("noofdays"),new Field("startdate"),new Field("enddate"),new Field("reason"),new Field("substitute"),new Field("phonenumber"),new Field("email"));
 		templateService.addTemplate(new MailTemplate("leave-request","C:\\Users\\SENTHILKUMARMAHESWAR\\Desktop\\Template",fields));
 
+		fields=Arrays.asList(new Field("name"),new Field("link"));
+		templateService.addTemplate(new MailTemplate("ad","C:\\Users\\SENTHILKUMARMAHESWAR\\Desktop\\Template",fields));
 		logger.info("Setting up done");
 	}
 

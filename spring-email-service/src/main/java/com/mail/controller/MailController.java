@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.mail.model.Field;
@@ -28,6 +29,7 @@ import com.mail.service.MailService;
  *
  */
 @RestController
+@RequestMapping("/template-mailing")
 public class MailController {
 	
 	@Autowired
@@ -59,7 +61,7 @@ public class MailController {
 	/**
 	 * @return List<MailTemplate> - to get all the templates available
 	 */
-	@GetMapping("/")
+	@GetMapping("/get-templates")
 	public ResponseEntity<List<MailTemplate>> greet(){
 		logger.info("Getting all the available templates");
 		return ResponseEntity.status(HttpStatus.OK).header("desc","Available templates are").body(templateService.getAll());
@@ -70,7 +72,7 @@ public class MailController {
 	 * @param templateid - selecting the required template
 	 * @return List<Field> - to return all the fields of a selected template
 	 */
-	@GetMapping("/{templateid}")
+	@GetMapping("/templateid/{templateid}")
 	public ResponseEntity<List<Field>> fieldDis(@PathVariable int templateid){
 		String templateName=(templateService.findById(templateid)).getTemplatename();
 		
