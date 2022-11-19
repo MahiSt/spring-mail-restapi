@@ -1,0 +1,18 @@
+server:
+  port: 8888
+  
+spring:
+  application:
+    name: EMAIL-CONFIG  
+    
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MahiSt/mail-service  
+eureka: 
+  client: 
+    serrvice-url: 
+      default-zone: http://localhost:8761
+  
+    
