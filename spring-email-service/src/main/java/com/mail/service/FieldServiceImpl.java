@@ -2,6 +2,8 @@ package com.mail.service;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,8 @@ import com.mail.repository.IFieldRepository;
 @Service
 public class FieldServiceImpl implements IFieldService{
 	
+	private Logger logger = LoggerFactory.getLogger(FieldServiceImpl.class);
+
 	@Autowired
 	IFieldRepository fieldRepository;
 
@@ -23,6 +27,8 @@ public class FieldServiceImpl implements IFieldService{
 	 */
 	@Override
 	public void addField(Field field) {
+		logger.info("Adding a new field to db"); 
+
 		fieldRepository.save(field);
 	}
 
@@ -31,8 +37,9 @@ public class FieldServiceImpl implements IFieldService{
 	 */
 	@Override
 	public void updatefield(Field field) {
-		fieldRepository.save(field);
-		
+		logger.info("Updating the template into db"); 
+
+		fieldRepository.save(field);		
 	}
 
 	/**
@@ -40,8 +47,9 @@ public class FieldServiceImpl implements IFieldService{
 	 */
 	@Override
 	public void deletefield(int fieldid) {
+		logger.info("Deleting a template from db"); 
+
 		fieldRepository.deleteById(fieldid);
-		
 	}
 
 	/**
@@ -50,6 +58,8 @@ public class FieldServiceImpl implements IFieldService{
 	 */
 	@Override
 	public Field getById(int fieldid) {
+		logger.info("Getting field by Id's from db"); 
+
 		return 	fieldRepository.findById(fieldid).get();
 	}
 
@@ -58,6 +68,8 @@ public class FieldServiceImpl implements IFieldService{
 	 */
 	@Override
 	public List<Field> getAll() {
+		logger.info("Getting all the vailabe fields from db"); 
+		
 		return fieldRepository.findAll();
 	}
 
@@ -67,6 +79,8 @@ public class FieldServiceImpl implements IFieldService{
 	 */
 	@Override
 	public List<Field> getByTemplateid(int templateid) {
+		logger.info("Getting the fields belongs to the template id: "+templateid +" from db"); 
+
 		return fieldRepository.findBytemplateId(templateid);
 	}
 

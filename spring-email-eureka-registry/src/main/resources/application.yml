@@ -1,14 +1,17 @@
-#why yml - because no need repeat the lines
-server: 
-  port : 8761 
-  
 eureka: 
  instance: 
-   hostname: localhost
+   hostname: ${host}
+
  client: 
    service-url: 
      default-zone: http://${eureka.instance.hostname}:${server.port}
-   fetch-registry: false #it should not search for register because it itself a registry...
-   register-with-eureka: false #it should not register itself in the registry
+
+   fetch-registry: false 
+   register-with-eureka: false 
+
  server:
-   enable-self-preservation: false #do not fetch microservice from the catch and show...show only when the microservice is up and running    
+   enable-self-preservation: false 
+
+spring:
+  application:
+    name: EUREKA-REGISTRY       

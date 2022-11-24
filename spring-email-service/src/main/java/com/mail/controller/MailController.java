@@ -26,7 +26,8 @@ import com.mail.service.MailService;
 
 /**
  * @author SENTHILKUMARMAHESWARAN
- *
+ *	
+ *	DESC: All the request from users will be operated here 
  */
 @RestController
 @RequestMapping("/template-mailing")
@@ -44,25 +45,25 @@ public class MailController {
 	private Logger logger = LoggerFactory.getLogger(MailController.class);
 	
 	/**
-	 * @param request - the request that contains all the mail related inputs from the client
-	 * @return MailResponse - gives message & status about sending the mail
+	 * @return ResponseEntity<String> 
+	 * 
+	 * DESC : This method is to welcome user
 	 */
-	@PostMapping("/sendmail")
-	public ResponseEntity<MailResponse> sendMail(@RequestBody MailRequest request) {
-		logger.info("Intializing the process.....");
-		List<Field> fields=request.getFields();
-		System.out.println(fields);
-		Map<String,Object> model=fields.stream().collect(Collectors.toMap(Field :: getFieldname, Field :: getValue));
-		logger.info("----->---->--->-->->");
-		
-		return ResponseEntity.status(HttpStatus.OK).header("desc","Sending mail").body(mailService.sendEmail(request , model));
+	@GetMapping("/")
+	public ResponseEntity<String> greet() {
+		logger.info("Greeting the user.....");		
+		String msg="Welcome to Template-Mailing By Maheswaran";
+		return ResponseEntity.status(HttpStatus.OK).header("info","Greting user").body(msg);
 	}
-	
+
 	/**
 	 * @return List<MailTemplate> - to get all the templates available
+	 * 
+	 * DESC : Getting all the available templates
+	 *
 	 */
-	@GetMapping("/get-templates")
-	public ResponseEntity<List<MailTemplate>> greet(){
+	@GetMapping("/template")
+	public ResponseEntity<List<MailTemplate>> getTemplates(){
 		logger.info("Getting all the available templates");
 		return ResponseEntity.status(HttpStatus.OK).header("desc","Available templates are").body(templateService.getAll());
 		
@@ -71,12 +72,35 @@ public class MailController {
 	/**
 	 * @param templateid - selecting the required template
 	 * @return List<Field> - to return all the fields of a selected template
+	 * 
+	 * DESC : Getting fields that belongs to the corresponding templateid
+	 * 
 	 */
-	@GetMapping("/templateid/{templateid}")
-	public ResponseEntity<List<Field>> fieldDis(@PathVariable int templateid){
+	@GetMapping("/template/{templateid}")
+	public ResponseEntity<List<Field>> getFields(@PathVariable int templateid){
 		String templateName=(templateService.findById(templateid)).getTemplatename();
 		
 		logger.info("Getting all the fields of the template:"+templateName);
 		return ResponseEntity.status(HttpStatus.OK).header("desc","Getting all the fields of the template :"+templateName).body(fieldService.getByTemplateid(templateid));
 	}
+
+	/**
+	 * @param request - the request that contains all the mail related inputs from the client
+	 * @return MailResponse - gives message & status about sending the mail
+	 *
+	 * DESC : Getting request from client converting Fields,Values into map, calling 
+	 * service to send mail,returning response from service 
+	 *
+	 */
+	@PostMapping("/sendmail")
+	public ResponseEntity<MailResponse> sendMail(@RequestBody MailRequest request) {
+		logger.info("Intializing the sendmail process.....");
+		List<Field> fields=request.getFields();
+		System.out.println(fields);
+		Map<String,Object> model=fields.stream().collect(Collectors.toMap(Field :: getFieldname, Field :: getValue));
+		logger.info("----->---->--->-->->");
+		
+		return ResponseEntity.status(HttpStatus.OK).header("desc","Sending mail").body(mailService.sendEmail(request , model));
+	}
+	
 }

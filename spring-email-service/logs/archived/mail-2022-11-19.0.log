@@ -1,0 +1,759 @@
+2022-11-19 12:02:54,071 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringEmailServiceApplication using Java 11.0.16 on senthil with PID 8928 (C:\Users\SENTHILKUMARMAHESWAR\git\spring-mail-restapi\spring-email-service\target\classes started by SENTHILKUMARMAHESWAR in C:\Users\SENTHILKUMARMAHESWAR\git\spring-mail-restapi\spring-email-service)
+2022-11-19 12:02:54,075 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-19 12:02:54,075 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-11-19 12:02:54,127 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Fetching config from server at : http://localhost:8888
+2022-11-19 12:02:54,128 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Located environment: name=EMAIL-API, profiles=[default], label=null, version=f08fd97e3514ac44be149ec5aa46b24179efbc25, state=null
+2022-11-19 12:02:54,131 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-19 12:02:54,131 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-19 12:02:55,152 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-19 12:02:55,350 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 189 ms. Found 2 JPA repository interfaces.
+2022-11-19 12:02:55,665 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=fb8c4de6-a40b-30d6-9084-e6ac03ad26a7
+2022-11-19 12:02:56,356 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-11-19 12:02:56,367 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-19 12:02:56,367 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-11-19 12:02:56,368 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-19 12:02:56,503 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-11-19 12:02:56,504 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2372 ms
+2022-11-19 12:02:56,784 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-19 12:02:56,836 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-19 12:02:57,015 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-19 12:02:57,127 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-11-19 12:02:57,407 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-11-19 12:02:57,463 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-19 12:02:58,202 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-19 12:02:58,210 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-19 12:02:58,456 INFO com.mail.config.ApiConfig [restartedMain] Coniguring the freemarker template...
+2022-11-19 12:02:58,457 INFO com.mail.config.ApiConfig [restartedMain] Conigured the freemarker template...
+2022-11-19 12:02:58,605 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-19 12:02:59,385 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2022-11-19 12:02:59,423 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-11-19 12:02:59,692 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-11-19 12:02:59,746 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-19 12:02:59,750 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-11-19 12:02:59,811 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-11-19 12:02:59,851 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-11-19 12:02:59,856 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-11-19 12:02:59,882 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-11-19 12:02:59,882 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-11-19 12:02:59,883 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-11-19 12:02:59,883 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-11-19 12:02:59,883 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-11-19 12:02:59,883 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-11-19 12:02:59,883 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-11-19 12:03:00,084 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-11-19 12:03:00,088 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-11-19 12:03:00,091 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-19 12:03:00,097 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1668839580096 with initial instances count: 2
+2022-11-19 12:03:00,099 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application EMAIL-API with eureka with status UP
+2022-11-19 12:03:00,100 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1668839580100, current=UP, previous=STARTING]
+2022-11-19 12:03:00,103 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-API/senthil:EMAIL-API: registering service...
+2022-11-19 12:03:00,105 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-11-19 12:03:00,128 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-19 12:03:00,129 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8080
+2022-11-19 12:03:00,151 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-API/senthil:EMAIL-API - registration status: 204
+2022-11-19 12:03:00,432 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringEmailServiceApplication in 8.501 seconds (JVM running for 9.559)
+2022-11-19 12:03:00,438 INFO com.mail.SpringEmailServiceApplication [restartedMain] Setting up all the template and field details to DB
+2022-11-19 12:03:00,541 INFO com.mail.SpringEmailServiceApplication [restartedMain] Setting up done
+2022-11-19 12:04:21,395 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-19 12:04:21,395 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-11-19 12:04:21,397 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2022-11-19 12:04:21,423 INFO com.mail.controller.MailController [http-nio-8080-exec-1] Getting all the available templates
+2022-11-19 12:04:30,640 WARN com.mail.exceptions.GlobalExceptionHandler [http-nio-8080-exec-2] Handling generic exception....-other exception has occured
+2022-11-19 12:04:30,650 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [java.util.NoSuchElementException: No value present]
+2022-11-19 12:06:08,166 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(12)-127.0.0.1] Application shutdown requested.
+2022-11-19 12:06:08,167 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(12)-127.0.0.1] Unregistering application EMAIL-API with eureka with status DOWN
+2022-11-19 12:06:08,167 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(12)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1668839768167, current=DOWN, previous=UP]
+2022-11-19 12:06:08,168 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-API/senthil:EMAIL-API: registering service...
+2022-11-19 12:06:08,184 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-API/senthil:EMAIL-API - registration status: 204
+2022-11-19 12:06:08,356 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(12)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8080"]
+2022-11-19 12:06:08,357 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(12)-127.0.0.1] Stopping service [Tomcat]
+2022-11-19 12:06:08,364 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(12)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-19 12:06:08,373 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(12)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2022-11-19 12:06:08,378 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(12)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8080"]
+2022-11-19 12:06:08,385 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(12)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-19 12:06:08,389 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(12)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-11-19 12:06:08,402 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(12)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-11-19 12:06:08,404 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(12)-127.0.0.1] Shutting down DiscoveryClient ...
+2022-11-19 12:06:11,413 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(12)-127.0.0.1] Unregistering ...
+2022-11-19 12:06:11,432 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(12)-127.0.0.1] DiscoveryClient_EMAIL-API/senthil:EMAIL-API - deregister  status: 200
+2022-11-19 12:06:11,438 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(12)-127.0.0.1] Completed shut down of DiscoveryClient
+2022-11-19 12:06:24,435 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringEmailServiceApplication using Java 11.0.16 on senthil with PID 6792 (C:\Users\SENTHILKUMARMAHESWAR\git\spring-mail-restapi\spring-email-service\target\classes started by SENTHILKUMARMAHESWAR in C:\Users\SENTHILKUMARMAHESWAR\git\spring-mail-restapi\spring-email-service)
+2022-11-19 12:06:24,436 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-19 12:06:24,437 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-11-19 12:06:24,480 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Fetching config from server at : http://localhost:8888
+2022-11-19 12:06:24,480 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Located environment: name=EMAIL-API, profiles=[default], label=null, version=f08fd97e3514ac44be149ec5aa46b24179efbc25, state=null
+2022-11-19 12:06:24,483 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-19 12:06:24,483 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-19 12:06:25,333 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-19 12:06:25,493 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 152 ms. Found 2 JPA repository interfaces.
+2022-11-19 12:06:25,714 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=fb8c4de6-a40b-30d6-9084-e6ac03ad26a7
+2022-11-19 12:06:26,280 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-11-19 12:06:26,289 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-19 12:06:26,290 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-11-19 12:06:26,290 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-19 12:06:26,407 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-11-19 12:06:26,407 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1923 ms
+2022-11-19 12:06:26,650 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-19 12:06:26,695 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-19 12:06:26,836 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-19 12:06:26,927 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-11-19 12:06:27,151 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-11-19 12:06:27,211 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-19 12:06:27,924 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-19 12:06:27,933 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-19 12:06:28,175 INFO com.mail.config.ApiConfig [restartedMain] Coniguring the freemarker template...
+2022-11-19 12:06:28,176 INFO com.mail.config.ApiConfig [restartedMain] Conigured the freemarker template...
+2022-11-19 12:06:28,328 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-19 12:06:29,072 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2022-11-19 12:06:29,134 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-11-19 12:06:29,417 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-11-19 12:06:29,468 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-19 12:06:29,472 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-11-19 12:06:29,538 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-11-19 12:06:29,576 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-11-19 12:06:29,581 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-11-19 12:06:29,606 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-11-19 12:06:29,607 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-11-19 12:06:29,607 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-11-19 12:06:29,607 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-11-19 12:06:29,607 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-11-19 12:06:29,608 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-11-19 12:06:29,608 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-11-19 12:06:29,777 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-11-19 12:06:29,781 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-11-19 12:06:29,784 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-19 12:06:29,789 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1668839789788 with initial instances count: 3
+2022-11-19 12:06:29,791 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application EMAIL-API with eureka with status UP
+2022-11-19 12:06:29,791 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1668839789791, current=UP, previous=STARTING]
+2022-11-19 12:06:29,794 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-API/senthil:EMAIL-API: registering service...
+2022-11-19 12:06:29,796 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-11-19 12:06:29,820 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-19 12:06:29,821 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8080
+2022-11-19 12:06:29,842 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-API/senthil:EMAIL-API - registration status: 204
+2022-11-19 12:06:30,137 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringEmailServiceApplication in 7.574 seconds (JVM running for 8.544)
+2022-11-19 12:06:30,144 INFO com.mail.SpringEmailServiceApplication [restartedMain] Setting up all the template and field details to DB
+2022-11-19 12:06:30,493 INFO com.mail.SpringEmailServiceApplication [restartedMain] Setting up done
+2022-11-19 12:06:46,971 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-19 12:06:46,972 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-11-19 12:06:46,973 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-11-19 12:06:47,041 INFO com.mail.controller.MailController [http-nio-8080-exec-1] Getting all the fields of the template:ad
+2022-11-19 12:08:06,291 INFO com.mail.controller.MailController [http-nio-8080-exec-3] Intializing the process.....
+2022-11-19 12:08:06,292 INFO com.mail.controller.MailController [http-nio-8080-exec-3] ----->---->--->-->->
+2022-11-19 12:08:06,293 INFO com.mail.service.MailService [http-nio-8080-exec-3] Into sendmail method.....
+2022-11-19 12:08:06,332 WARN com.mail.service.MailService [http-nio-8080-exec-3] Field not found exception is thrown - numbers differ...
+2022-11-19 12:08:06,334 WARN com.mail.exceptions.GlobalExceptionHandler [http-nio-8080-exec-3] Handling field not found exception....
+2022-11-19 12:08:06,341 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [com.mail.exceptions.FieldNotFoundException: Entered fields does not match the template]
+2022-11-19 12:11:29,616 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 12:11:39,104 INFO com.mail.controller.MailController [http-nio-8080-exec-5] Intializing the process.....
+2022-11-19 12:11:39,104 INFO com.mail.controller.MailController [http-nio-8080-exec-5] ----->---->--->-->->
+2022-11-19 12:11:39,105 INFO com.mail.service.MailService [http-nio-8080-exec-5] Into sendmail method.....
+2022-11-19 12:11:39,109 INFO com.mail.service.MailService [http-nio-8080-exec-5] Checking for fields available with those provided by the client.....
+2022-11-19 12:11:39,109 INFO com.mail.service.MailService [http-nio-8080-exec-5] Checked..All good....
+2022-11-19 12:11:39,129 INFO com.mail.service.MailService [http-nio-8080-exec-5] Getting file path.....
+2022-11-19 12:11:39,130 INFO com.mail.service.MailService [http-nio-8080-exec-5] Getting template from the path.....
+2022-11-19 12:11:39,180 INFO com.mail.service.MailService [http-nio-8080-exec-5] Filling templates with the provided field values.....
+2022-11-19 12:11:39,191 INFO com.mail.service.MailService [http-nio-8080-exec-5] Retriving details from request and setting them to mail.....
+2022-11-19 12:11:43,360 INFO com.mail.service.MailService [http-nio-8080-exec-5] Retrived details. Sending.......
+2022-11-19 12:11:43,360 INFO com.mail.service.MailService [http-nio-8080-exec-5] Sent successfully.....
+2022-11-19 12:11:43,361 INFO com.mail.service.MailService [http-nio-8080-exec-5] Sending response.....
+2022-11-19 12:16:29,620 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 12:21:29,625 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 12:26:29,639 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 12:27:10,037 INFO com.mail.controller.MailController [http-nio-8080-exec-7] Intializing the process.....
+2022-11-19 12:27:10,037 INFO com.mail.controller.MailController [http-nio-8080-exec-7] ----->---->--->-->->
+2022-11-19 12:27:10,037 INFO com.mail.service.MailService [http-nio-8080-exec-7] Into sendmail method.....
+2022-11-19 12:27:10,037 INFO com.mail.service.MailService [http-nio-8080-exec-7] Checking for fields available with those provided by the client.....
+2022-11-19 12:27:10,037 INFO com.mail.service.MailService [http-nio-8080-exec-7] Checked..All good....
+2022-11-19 12:27:10,053 INFO com.mail.service.MailService [http-nio-8080-exec-7] Getting file path.....
+2022-11-19 12:27:10,053 INFO com.mail.service.MailService [http-nio-8080-exec-7] Getting template from the path.....
+2022-11-19 12:27:10,053 INFO com.mail.service.MailService [http-nio-8080-exec-7] Filling templates with the provided field values.....
+2022-11-19 12:27:10,053 INFO com.mail.service.MailService [http-nio-8080-exec-7] Retriving details from request and setting them to mail.....
+2022-11-19 12:27:13,866 INFO com.mail.service.MailService [http-nio-8080-exec-7] Retrived details. Sending.......
+2022-11-19 12:27:13,868 INFO com.mail.service.MailService [http-nio-8080-exec-7] Sent successfully.....
+2022-11-19 12:27:13,868 INFO com.mail.service.MailService [http-nio-8080-exec-7] Sending response.....
+2022-11-19 12:31:29,645 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 12:36:29,648 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 12:41:29,656 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 12:43:54,734 INFO com.mail.controller.MailController [http-nio-8080-exec-9] Intializing the process.....
+2022-11-19 12:43:54,735 INFO com.mail.controller.MailController [http-nio-8080-exec-9] ----->---->--->-->->
+2022-11-19 12:43:54,735 INFO com.mail.service.MailService [http-nio-8080-exec-9] Into sendmail method.....
+2022-11-19 12:43:54,743 INFO com.mail.service.MailService [http-nio-8080-exec-9] Checking for fields available with those provided by the client.....
+2022-11-19 12:43:54,744 INFO com.mail.service.MailService [http-nio-8080-exec-9] Checked..All good....
+2022-11-19 12:43:54,744 INFO com.mail.service.MailService [http-nio-8080-exec-9] Getting file path.....
+2022-11-19 12:43:54,745 INFO com.mail.service.MailService [http-nio-8080-exec-9] Getting template from the path.....
+2022-11-19 12:43:54,749 INFO com.mail.service.MailService [http-nio-8080-exec-9] Filling templates with the provided field values.....
+2022-11-19 12:43:54,750 INFO com.mail.service.MailService [http-nio-8080-exec-9] Retriving details from request and setting them to mail.....
+2022-11-19 12:43:58,545 INFO com.mail.service.MailService [http-nio-8080-exec-9] Retrived details. Sending.......
+2022-11-19 12:43:58,545 INFO com.mail.service.MailService [http-nio-8080-exec-9] Sent successfully.....
+2022-11-19 12:43:58,546 INFO com.mail.service.MailService [http-nio-8080-exec-9] Sending response.....
+2022-11-19 12:44:31,862 WARN com.mail.exceptions.GlobalExceptionHandler [http-nio-8080-exec-10] Handling Http Request method not supported exception....
+2022-11-19 12:44:31,864 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-10] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-11-19 12:44:59,780 INFO com.mail.controller.MailController [http-nio-8080-exec-1] Getting all the available templates
+2022-11-19 12:45:40,894 INFO com.mail.controller.MailController [http-nio-8080-exec-2] Getting all the fields of the template:leave-request
+2022-11-19 12:46:29,669 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 12:46:32,977 INFO com.mail.controller.MailController [http-nio-8080-exec-3] Intializing the process.....
+2022-11-19 12:46:32,979 INFO com.mail.controller.MailController [http-nio-8080-exec-3] ----->---->--->-->->
+2022-11-19 12:46:32,981 INFO com.mail.service.MailService [http-nio-8080-exec-3] Into sendmail method.....
+2022-11-19 12:46:32,994 INFO com.mail.service.MailService [http-nio-8080-exec-3] Checking for fields available with those provided by the client.....
+2022-11-19 12:46:32,996 INFO com.mail.service.MailService [http-nio-8080-exec-3] Checked..All good....
+2022-11-19 12:46:32,997 INFO com.mail.service.MailService [http-nio-8080-exec-3] Getting file path.....
+2022-11-19 12:46:32,999 INFO com.mail.service.MailService [http-nio-8080-exec-3] Getting template from the path.....
+2022-11-19 12:46:33,001 INFO com.mail.service.MailService [http-nio-8080-exec-3] Filling templates with the provided field values.....
+2022-11-19 12:46:33,002 INFO com.mail.service.MailService [http-nio-8080-exec-3] Retriving details from request and setting them to mail.....
+2022-11-19 12:46:36,214 INFO com.mail.service.MailService [http-nio-8080-exec-3] Retrived details. Sending.......
+2022-11-19 12:46:36,215 INFO com.mail.service.MailService [http-nio-8080-exec-3] Sent successfully.....
+2022-11-19 12:46:36,215 INFO com.mail.service.MailService [http-nio-8080-exec-3] Sending response.....
+2022-11-19 12:51:29,675 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 12:52:19,887 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(55)-127.0.0.1] Application shutdown requested.
+2022-11-19 12:52:19,889 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(55)-127.0.0.1] Unregistering application EMAIL-API with eureka with status DOWN
+2022-11-19 12:52:19,889 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(55)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1668842539889, current=DOWN, previous=UP]
+2022-11-19 12:52:19,890 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-API/senthil:EMAIL-API: registering service...
+2022-11-19 12:52:19,909 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-API/senthil:EMAIL-API - registration status: 204
+2022-11-19 12:52:20,063 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(55)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8080"]
+2022-11-19 12:52:20,064 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(55)-127.0.0.1] Stopping service [Tomcat]
+2022-11-19 12:52:20,067 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(55)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-19 12:52:20,073 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(55)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2022-11-19 12:52:20,076 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(55)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8080"]
+2022-11-19 12:52:20,083 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(55)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-19 12:52:20,087 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(55)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-11-19 12:52:20,099 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(55)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-11-19 12:52:20,102 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(55)-127.0.0.1] Shutting down DiscoveryClient ...
+2022-11-19 12:52:23,107 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(55)-127.0.0.1] Unregistering ...
+2022-11-19 12:52:23,124 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(55)-127.0.0.1] DiscoveryClient_EMAIL-API/senthil:EMAIL-API - deregister  status: 200
+2022-11-19 12:52:23,133 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(55)-127.0.0.1] Completed shut down of DiscoveryClient
+2022-11-19 12:55:35,961 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringEmailServiceApplication using Java 11.0.16 on senthil with PID 13532 (C:\Users\SENTHILKUMARMAHESWAR\git\spring-mail-restapi\spring-email-service\target\classes started by SENTHILKUMARMAHESWAR in C:\Users\SENTHILKUMARMAHESWAR\git\spring-mail-restapi\spring-email-service)
+2022-11-19 12:55:35,963 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-19 12:55:35,963 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-11-19 12:55:35,997 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Fetching config from server at : http://localhost:8888
+2022-11-19 12:55:35,997 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Located environment: name=EMAIL-API, profiles=[default], label=null, version=f08fd97e3514ac44be149ec5aa46b24179efbc25, state=null
+2022-11-19 12:55:35,999 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-19 12:55:36,000 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-19 12:55:36,841 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-19 12:55:37,001 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 152 ms. Found 2 JPA repository interfaces.
+2022-11-19 12:55:37,211 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=fb8c4de6-a40b-30d6-9084-e6ac03ad26a7
+2022-11-19 12:55:37,749 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-11-19 12:55:37,757 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-19 12:55:37,758 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-11-19 12:55:37,758 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-19 12:55:37,861 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-11-19 12:55:37,861 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1861 ms
+2022-11-19 12:55:38,077 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-19 12:55:38,123 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-19 12:55:38,259 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-19 12:55:38,350 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-11-19 12:55:38,573 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-11-19 12:55:38,629 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-19 12:55:39,362 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-19 12:55:39,370 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-19 12:55:39,600 INFO com.mail.config.ApiConfig [restartedMain] Coniguring the freemarker template...
+2022-11-19 12:55:39,601 INFO com.mail.config.ApiConfig [restartedMain] Conigured the freemarker template...
+2022-11-19 12:55:39,751 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-19 12:55:40,499 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2022-11-19 12:55:40,531 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-11-19 12:55:40,786 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-11-19 12:55:40,834 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-19 12:55:40,838 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-11-19 12:55:40,900 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-11-19 12:55:40,938 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-11-19 12:55:40,943 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-11-19 12:55:40,967 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-11-19 12:55:40,968 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-11-19 12:55:40,968 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-11-19 12:55:40,968 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-11-19 12:55:40,968 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-11-19 12:55:40,968 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-11-19 12:55:40,968 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-11-19 12:55:41,145 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-11-19 12:55:41,147 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-11-19 12:55:41,150 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-19 12:55:41,156 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1668842741155 with initial instances count: 0
+2022-11-19 12:55:41,158 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application EMAIL-API with eureka with status UP
+2022-11-19 12:55:41,159 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1668842741159, current=UP, previous=STARTING]
+2022-11-19 12:55:41,161 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-API/senthil:EMAIL-API: registering service...
+2022-11-19 12:55:41,164 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-11-19 12:55:41,186 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-19 12:55:41,187 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8080
+2022-11-19 12:55:41,207 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-API/senthil:EMAIL-API - registration status: 204
+2022-11-19 12:55:41,485 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringEmailServiceApplication in 9.357 seconds (JVM running for 10.296)
+2022-11-19 12:55:41,491 INFO com.mail.SpringEmailServiceApplication [restartedMain] Setting up all the template and field details to DB
+2022-11-19 12:55:41,813 INFO com.mail.SpringEmailServiceApplication [restartedMain] Setting up done
+2022-11-19 12:56:11,160 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Disable delta property : false
+2022-11-19 12:56:11,161 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Single vip registry refresh property : null
+2022-11-19 12:56:11,162 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Force full registry fetch : false
+2022-11-19 12:56:11,163 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application is null : false
+2022-11-19 12:56:11,163 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Registered Applications size is zero : true
+2022-11-19 12:56:11,164 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application version is -1: false
+2022-11-19 12:56:11,164 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Getting all instance registry info from the eureka server
+2022-11-19 12:56:11,179 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] The response status is 200
+2022-11-19 12:57:29,713 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-19 12:57:29,714 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-11-19 12:57:29,715 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-11-19 12:57:29,735 WARN com.mail.exceptions.GlobalExceptionHandler [http-nio-8080-exec-1] Handling Http Request method not supported exception....
+2022-11-19 12:57:29,750 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-11-19 12:57:42,594 INFO com.mail.controller.MailController [http-nio-8080-exec-2] Getting all the available templates
+2022-11-19 12:58:00,628 INFO com.mail.controller.MailController [http-nio-8080-exec-3] Getting all the fields of the template:marriage-invitation
+2022-11-19 12:58:15,207 INFO com.mail.controller.MailController [http-nio-8080-exec-4] Intializing the process.....
+2022-11-19 12:58:15,209 INFO com.mail.controller.MailController [http-nio-8080-exec-4] ----->---->--->-->->
+2022-11-19 12:58:15,209 INFO com.mail.service.MailService [http-nio-8080-exec-4] Into sendmail method.....
+2022-11-19 12:58:15,238 INFO com.mail.service.MailService [http-nio-8080-exec-4] Checking for fields available with those provided by the client.....
+2022-11-19 12:58:15,239 INFO com.mail.service.MailService [http-nio-8080-exec-4] Checked..All good....
+2022-11-19 12:58:15,253 INFO com.mail.service.MailService [http-nio-8080-exec-4] Getting file path.....
+2022-11-19 12:58:15,254 INFO com.mail.service.MailService [http-nio-8080-exec-4] Getting template from the path.....
+2022-11-19 12:58:15,306 INFO com.mail.service.MailService [http-nio-8080-exec-4] Filling templates with the provided field values.....
+2022-11-19 12:58:15,315 INFO com.mail.service.MailService [http-nio-8080-exec-4] Retriving details from request and setting them to mail.....
+2022-11-19 12:58:18,773 INFO com.mail.service.MailService [http-nio-8080-exec-4] Retrived details. Sending.......
+2022-11-19 12:58:18,773 INFO com.mail.service.MailService [http-nio-8080-exec-4] Sent successfully.....
+2022-11-19 12:58:18,773 INFO com.mail.service.MailService [http-nio-8080-exec-4] Sending response.....
+2022-11-19 12:58:37,961 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(11)-127.0.0.1] Application shutdown requested.
+2022-11-19 12:58:37,962 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(11)-127.0.0.1] Unregistering application EMAIL-API with eureka with status DOWN
+2022-11-19 12:58:37,963 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(11)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1668842917963, current=DOWN, previous=UP]
+2022-11-19 12:58:37,963 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-API/senthil:EMAIL-API: registering service...
+2022-11-19 12:58:37,969 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/EMAIL-API": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/EMAIL-API": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 21 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 34 more
+
+2022-11-19 12:58:37,969 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/EMAIL-API": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-11-19 12:58:37,977 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/EMAIL-API": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/EMAIL-API": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2022-11-19 12:58:37,977 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/EMAIL-API": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-11-19 12:58:37,979 WARN com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-API/senthil:EMAIL-API - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-11-19 12:58:37,980 WARN com.netflix.discovery.InstanceInfoReplicator [DiscoveryClient-InstanceInfoReplicator-0] There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-11-19 12:58:38,126 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8080"]
+2022-11-19 12:58:38,126 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Stopping service [Tomcat]
+2022-11-19 12:58:38,129 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-19 12:58:38,134 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2022-11-19 12:58:38,137 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8080"]
+2022-11-19 12:58:38,144 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(11)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-19 12:58:38,147 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-11-19 12:58:38,159 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-11-19 12:58:38,161 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(11)-127.0.0.1] Shutting down DiscoveryClient ...
+2022-11-19 12:58:41,168 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(11)-127.0.0.1] Unregistering ...
+2022-11-19 12:58:41,175 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [RMI TCP Connection(11)-127.0.0.1] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/EMAIL-API/senthil:EMAIL-API": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/EMAIL-API/senthil:EMAIL-API": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 77 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 90 more
+
+2022-11-19 12:58:41,176 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [RMI TCP Connection(11)-127.0.0.1] Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/EMAIL-API/senthil:EMAIL-API": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-11-19 12:58:41,176 ERROR com.netflix.discovery.DiscoveryClient [RMI TCP Connection(11)-127.0.0.1] DiscoveryClient_EMAIL-API/senthil:EMAIL-API - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-11-19 12:58:41,181 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(11)-127.0.0.1] Completed shut down of DiscoveryClient
+2022-11-19 14:35:39,882 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringEmailServiceApplication using Java 11.0.16 on senthil with PID 5612 (C:\Users\SENTHILKUMARMAHESWAR\git\spring-mail-restapi\spring-email-service\target\classes started by SENTHILKUMARMAHESWAR in C:\Users\SENTHILKUMARMAHESWAR\git\spring-mail-restapi\spring-email-service)
+2022-11-19 14:35:39,885 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-19 14:35:39,886 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-11-19 14:35:39,943 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Fetching config from server at : http://localhost:8888
+2022-11-19 14:35:39,944 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Located environment: name=EMAIL-API, profiles=[default], label=null, version=f08fd97e3514ac44be149ec5aa46b24179efbc25, state=null
+2022-11-19 14:35:39,951 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-19 14:35:39,951 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-19 14:35:41,244 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-19 14:35:41,492 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 232 ms. Found 2 JPA repository interfaces.
+2022-11-19 14:35:41,805 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=fb8c4de6-a40b-30d6-9084-e6ac03ad26a7
+2022-11-19 14:35:42,559 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-11-19 14:35:42,571 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-19 14:35:42,572 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-11-19 14:35:42,572 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-19 14:35:42,705 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-11-19 14:35:42,706 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2754 ms
+2022-11-19 14:35:43,053 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-19 14:35:43,154 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-19 14:35:43,420 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-19 14:35:43,576 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-11-19 14:35:43,906 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-11-19 14:35:43,950 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-19 14:35:45,045 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-19 14:35:45,056 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-19 14:35:45,385 INFO com.mail.config.ApiConfig [restartedMain] Coniguring the freemarker template...
+2022-11-19 14:35:45,387 INFO com.mail.config.ApiConfig [restartedMain] Conigured the freemarker template...
+2022-11-19 14:35:45,599 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-19 14:35:46,651 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2022-11-19 14:35:46,700 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-11-19 14:35:47,037 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-11-19 14:35:47,115 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-19 14:35:47,122 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-11-19 14:35:47,205 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-11-19 14:35:47,256 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-11-19 14:35:47,264 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-11-19 14:35:47,302 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-11-19 14:35:47,302 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-11-19 14:35:47,302 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-11-19 14:35:47,303 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-11-19 14:35:47,303 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-11-19 14:35:47,303 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-11-19 14:35:47,303 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-11-19 14:35:47,537 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-11-19 14:35:47,540 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-11-19 14:35:47,543 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-19 14:35:47,551 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1668848747550 with initial instances count: 1
+2022-11-19 14:35:47,553 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application EMAIL-API with eureka with status UP
+2022-11-19 14:35:47,554 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1668848747554, current=UP, previous=STARTING]
+2022-11-19 14:35:47,556 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-API/senthil:EMAIL-API: registering service...
+2022-11-19 14:35:47,559 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-11-19 14:35:47,595 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-19 14:35:47,597 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8080
+2022-11-19 14:35:47,624 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-API/senthil:EMAIL-API - registration status: 204
+2022-11-19 14:35:47,970 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringEmailServiceApplication in 10.301 seconds (JVM running for 11.711)
+2022-11-19 14:35:47,978 INFO com.mail.SpringEmailServiceApplication [restartedMain] Setting up all the template and field details to DB
+2022-11-19 14:35:48,403 INFO com.mail.SpringEmailServiceApplication [restartedMain] Setting up done
+2022-11-19 14:36:41,948 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-19 14:36:41,949 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-11-19 14:36:41,951 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2022-11-19 14:36:41,982 INFO com.mail.controller.MailController [http-nio-8080-exec-1] Getting all the available templates
+2022-11-19 14:37:08,249 INFO com.mail.controller.MailController [http-nio-8080-exec-2] Getting all the fields of the template:marriage-invitation
+2022-11-19 14:40:47,318 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 14:45:47,336 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 14:50:47,339 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 14:55:47,352 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 15:00:47,353 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 15:05:47,360 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 15:10:47,370 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 15:15:47,378 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 15:20:47,388 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 15:24:11,926 INFO com.mail.controller.MailController [http-nio-8080-exec-9] Getting all the available templates
+2022-11-19 15:24:41,603 INFO com.mail.controller.MailController [http-nio-8080-exec-1] Getting all the fields of the template:marriage-invitation
+2022-11-19 15:25:47,404 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 15:26:01,779 INFO com.mail.controller.MailController [http-nio-8080-exec-3] Intializing the process.....
+2022-11-19 15:26:01,780 INFO com.mail.controller.MailController [http-nio-8080-exec-3] ----->---->--->-->->
+2022-11-19 15:26:01,781 INFO com.mail.service.MailService [http-nio-8080-exec-3] Into sendmail method.....
+2022-11-19 15:26:01,822 INFO com.mail.service.MailService [http-nio-8080-exec-3] Checking for fields available with those provided by the client.....
+2022-11-19 15:26:01,823 INFO com.mail.service.MailService [http-nio-8080-exec-3] Checked..All good....
+2022-11-19 15:26:01,839 INFO com.mail.service.MailService [http-nio-8080-exec-3] Getting file path.....
+2022-11-19 15:26:01,841 INFO com.mail.service.MailService [http-nio-8080-exec-3] Getting template from the path.....
+2022-11-19 15:26:01,896 INFO com.mail.service.MailService [http-nio-8080-exec-3] Filling templates with the provided field values.....
+2022-11-19 15:26:01,909 INFO com.mail.service.MailService [http-nio-8080-exec-3] Retriving details from request and setting them to mail.....
+2022-11-19 15:26:01,910 WARN com.mail.service.MailService [http-nio-8080-exec-3] Exception is thrown while sending mail...
+2022-11-19 15:26:01,910 INFO com.mail.service.MailService [http-nio-8080-exec-3] Sending response.....
+2022-11-19 15:28:27,249 INFO com.mail.controller.MailController [http-nio-8080-exec-5] Intializing the process.....
+2022-11-19 15:28:27,249 INFO com.mail.controller.MailController [http-nio-8080-exec-5] ----->---->--->-->->
+2022-11-19 15:28:27,250 INFO com.mail.service.MailService [http-nio-8080-exec-5] Into sendmail method.....
+2022-11-19 15:28:27,255 INFO com.mail.service.MailService [http-nio-8080-exec-5] Checking for fields available with those provided by the client.....
+2022-11-19 15:28:27,256 INFO com.mail.service.MailService [http-nio-8080-exec-5] Checked..All good....
+2022-11-19 15:28:27,256 INFO com.mail.service.MailService [http-nio-8080-exec-5] Getting file path.....
+2022-11-19 15:28:27,257 INFO com.mail.service.MailService [http-nio-8080-exec-5] Getting template from the path.....
+2022-11-19 15:28:27,257 INFO com.mail.service.MailService [http-nio-8080-exec-5] Filling templates with the provided field values.....
+2022-11-19 15:28:27,258 INFO com.mail.service.MailService [http-nio-8080-exec-5] Retriving details from request and setting them to mail.....
+2022-11-19 15:28:27,258 WARN com.mail.service.MailService [http-nio-8080-exec-5] Exception is thrown while sending mail...
+2022-11-19 15:28:27,258 INFO com.mail.service.MailService [http-nio-8080-exec-5] Sending response.....
+2022-11-19 15:28:42,408 INFO com.mail.controller.MailController [http-nio-8080-exec-6] Intializing the process.....
+2022-11-19 15:28:42,409 INFO com.mail.controller.MailController [http-nio-8080-exec-6] ----->---->--->-->->
+2022-11-19 15:28:42,409 INFO com.mail.service.MailService [http-nio-8080-exec-6] Into sendmail method.....
+2022-11-19 15:28:42,414 INFO com.mail.service.MailService [http-nio-8080-exec-6] Checking for fields available with those provided by the client.....
+2022-11-19 15:28:42,414 INFO com.mail.service.MailService [http-nio-8080-exec-6] Checked..All good....
+2022-11-19 15:28:42,414 INFO com.mail.service.MailService [http-nio-8080-exec-6] Getting file path.....
+2022-11-19 15:28:42,414 INFO com.mail.service.MailService [http-nio-8080-exec-6] Getting template from the path.....
+2022-11-19 15:28:42,415 INFO com.mail.service.MailService [http-nio-8080-exec-6] Filling templates with the provided field values.....
+2022-11-19 15:28:42,415 INFO com.mail.service.MailService [http-nio-8080-exec-6] Retriving details from request and setting them to mail.....
+2022-11-19 15:28:47,100 INFO com.mail.service.MailService [http-nio-8080-exec-6] Retrived details. Sending.......
+2022-11-19 15:28:47,101 INFO com.mail.service.MailService [http-nio-8080-exec-6] Sent successfully.....
+2022-11-19 15:28:47,102 INFO com.mail.service.MailService [http-nio-8080-exec-6] Sending response.....
+2022-11-19 15:30:47,414 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-19 15:33:37,792 INFO com.mail.controller.MailController [http-nio-8080-exec-8] Getting all the available templates
+2022-11-19 15:33:57,948 INFO com.mail.controller.MailController [http-nio-8080-exec-9] Getting all the fields of the template:marriage-invitation
+2022-11-19 15:34:33,502 INFO com.mail.controller.MailController [http-nio-8080-exec-10] Intializing the process.....
+2022-11-19 15:34:33,503 INFO com.mail.controller.MailController [http-nio-8080-exec-10] ----->---->--->-->->
+2022-11-19 15:34:33,503 INFO com.mail.service.MailService [http-nio-8080-exec-10] Into sendmail method.....
+2022-11-19 15:34:33,509 INFO com.mail.service.MailService [http-nio-8080-exec-10] Checking for fields available with those provided by the client.....
+2022-11-19 15:34:33,509 INFO com.mail.service.MailService [http-nio-8080-exec-10] Checked..All good....
+2022-11-19 15:34:33,509 INFO com.mail.service.MailService [http-nio-8080-exec-10] Getting file path.....
+2022-11-19 15:34:33,510 INFO com.mail.service.MailService [http-nio-8080-exec-10] Getting template from the path.....
+2022-11-19 15:34:33,511 INFO com.mail.service.MailService [http-nio-8080-exec-10] Filling templates with the provided field values.....
+2022-11-19 15:34:33,512 INFO com.mail.service.MailService [http-nio-8080-exec-10] Retriving details from request and setting them to mail.....
+2022-11-19 15:34:38,016 INFO com.mail.service.MailService [http-nio-8080-exec-10] Retrived details. Sending.......
+2022-11-19 15:34:38,017 INFO com.mail.service.MailService [http-nio-8080-exec-10] Sent successfully.....
+2022-11-19 15:34:38,017 INFO com.mail.service.MailService [http-nio-8080-exec-10] Sending response.....

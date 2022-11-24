@@ -1,0 +1,344 @@
+2022-11-21 09:25:25,407 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-11-21 09:25:25,416 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpringEmailConfigServerApplication using Java 11.0.16 on senthil with PID 6784 (C:\Users\SENTHILKUMARMAHESWAR\git\spring-mail-restapi\spring-email-config-server\target\classes started by SENTHILKUMARMAHESWAR in C:\Users\SENTHILKUMARMAHESWAR\git\spring-mail-restapi\spring-email-config-server)
+2022-11-21 09:25:25,421 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-21 09:25:25,423 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-21 09:25:26,739 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=7dace68e-6da0-352e-8e60-ef5f4437b8a1
+2022-11-21 09:25:27,292 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8888 (http)
+2022-11-21 09:25:27,308 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8888"]
+2022-11-21 09:25:27,308 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-21 09:25:27,308 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-21 09:25:27,519 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-21 09:25:27,520 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2026 ms
+2022-11-21 09:25:29,567 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-11-21 09:25:29,688 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-21 09:25:29,694 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-11-21 09:25:29,808 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-11-21 09:25:29,860 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-11-21 09:25:29,871 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-11-21 09:25:29,904 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-11-21 09:25:29,904 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-11-21 09:25:29,904 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-11-21 09:25:29,904 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-11-21 09:25:29,904 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-11-21 09:25:29,904 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-11-21 09:25:29,905 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-11-21 09:25:30,300 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-11-21 09:25:30,302 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-11-21 09:25:30,305 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-21 09:25:30,309 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1669002930308 with initial instances count: 0
+2022-11-21 09:25:30,310 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application EMAIL-CONFIG with eureka with status UP
+2022-11-21 09:25:30,310 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1669002930310, current=UP, previous=STARTING]
+2022-11-21 09:25:30,314 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-CONFIG/senthil:EMAIL-CONFIG:8888: registering service...
+2022-11-21 09:25:30,315 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8888"]
+2022-11-21 09:25:30,342 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8888 (http) with context path ''
+2022-11-21 09:25:30,343 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8888
+2022-11-21 09:25:30,470 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-CONFIG/senthil:EMAIL-CONFIG:8888 - registration status: 204
+2022-11-21 09:25:30,696 INFO org.springframework.boot.StartupInfoLogger [main] Started SpringEmailConfigServerApplication in 6.246 seconds (JVM running for 7.267)
+2022-11-21 09:25:33,257 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8888-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-21 09:25:33,258 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8888-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-11-21 09:25:33,260 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8888-exec-1] Completed initialization in 1 ms
+2022-11-21 09:25:47,313 INFO org.springframework.cloud.config.server.environment.NativeEnvironmentRepository [http-nio-8888-exec-1] Adding property source: Config resource 'file [C:\Users\SENTHI~1\AppData\Local\Temp\config-repo-3784795673852325618\EMAIL-GATEWAY.yml]' via location 'file:/C:/Users/SENTHI~1/AppData/Local/Temp/config-repo-3784795673852325618/'
+2022-11-21 09:26:00,303 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Disable delta property : false
+2022-11-21 09:26:00,304 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Single vip registry refresh property : null
+2022-11-21 09:26:00,305 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Force full registry fetch : false
+2022-11-21 09:26:00,305 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application is null : false
+2022-11-21 09:26:00,306 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Registered Applications size is zero : true
+2022-11-21 09:26:00,306 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application version is -1: false
+2022-11-21 09:26:00,306 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Getting all instance registry info from the eureka server
+2022-11-21 09:26:00,332 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] The response status is 200
+2022-11-21 09:27:46,175 INFO org.springframework.cloud.config.server.environment.NativeEnvironmentRepository [http-nio-8888-exec-3] Adding property source: Config resource 'file [C:\Users\SENTHI~1\AppData\Local\Temp\config-repo-3784795673852325618\EMAIL-API.yml]' via location 'file:/C:/Users/SENTHI~1/AppData/Local/Temp/config-repo-3784795673852325618/'
+2022-11-21 09:30:29,909 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 09:35:29,911 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 09:40:29,922 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 09:45:29,939 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 09:47:40,941 INFO org.springframework.cloud.config.server.environment.NativeEnvironmentRepository [http-nio-8888-exec-8] Adding property source: Config resource 'file [C:\Users\SENTHI~1\AppData\Local\Temp\config-repo-3784795673852325618\EMAIL-API.yml]' via location 'file:/C:/Users/SENTHI~1/AppData/Local/Temp/config-repo-3784795673852325618/'
+2022-11-21 09:48:50,996 INFO org.springframework.cloud.config.server.environment.NativeEnvironmentRepository [http-nio-8888-exec-10] Adding property source: Config resource 'file [C:\Users\SENTHI~1\AppData\Local\Temp\config-repo-3784795673852325618\EMAIL-API.yml]' via location 'file:/C:/Users/SENTHI~1/AppData/Local/Temp/config-repo-3784795673852325618/'
+2022-11-21 09:50:29,941 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 09:55:29,957 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 10:00:29,960 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 10:05:29,974 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 10:10:29,989 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 10:15:29,999 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 10:20:30,015 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 10:25:30,029 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 10:30:30,035 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 10:35:30,045 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 10:40:30,050 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 10:45:30,069 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 10:50:30,078 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 10:55:30,085 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 11:00:30,091 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 11:05:30,102 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 11:10:26,730 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(114)-127.0.0.1] Application shutdown requested.
+2022-11-21 11:10:26,740 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(114)-127.0.0.1] Unregistering application EMAIL-CONFIG with eureka with status DOWN
+2022-11-21 11:10:26,748 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(114)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1669009226740, current=DOWN, previous=UP]
+2022-11-21 11:10:26,750 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-CONFIG/senthil:EMAIL-CONFIG:8888: registering service...
+2022-11-21 11:10:26,790 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-CONFIG/senthil:EMAIL-CONFIG:8888 - registration status: 204
+2022-11-21 11:10:27,017 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(114)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8888"]
+2022-11-21 11:10:27,019 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(114)-127.0.0.1] Stopping service [Tomcat]
+2022-11-21 11:10:27,022 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(114)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-21 11:10:27,044 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(114)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8888"]
+2022-11-21 11:10:27,052 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(114)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8888"]
+2022-11-21 11:10:27,076 WARN org.springframework.cloud.config.server.support.AbstractScmAccessor$1 [Thread-3] Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\SENTHI~1\AppData\Local\Temp\config-repo-3784795673852325618\.git\objects\pack\pack-2f889a74dbb6331d7d869fa5148aa82a80da5e8c.idx
+2022-11-21 11:10:27,085 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(114)-127.0.0.1] Shutting down DiscoveryClient ...
+2022-11-21 11:10:30,110 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 11:10:30,117 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(114)-127.0.0.1] Unregistering ...
+2022-11-21 11:10:30,130 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(114)-127.0.0.1] DiscoveryClient_EMAIL-CONFIG/senthil:EMAIL-CONFIG:8888 - deregister  status: 200
+2022-11-21 11:10:30,154 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(114)-127.0.0.1] Completed shut down of DiscoveryClient
+2022-11-21 11:10:34,932 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-11-21 11:10:34,949 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpringEmailConfigServerApplication using Java 11.0.16 on senthil with PID 5684 (C:\Users\SENTHILKUMARMAHESWAR\git\spring-mail-restapi\spring-email-config-server\target\classes started by SENTHILKUMARMAHESWAR in C:\Users\SENTHILKUMARMAHESWAR\git\spring-mail-restapi\spring-email-config-server)
+2022-11-21 11:10:34,953 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-21 11:10:34,955 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-21 11:10:36,740 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=7dace68e-6da0-352e-8e60-ef5f4437b8a1
+2022-11-21 11:10:37,290 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8888 (http)
+2022-11-21 11:10:37,324 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8888"]
+2022-11-21 11:10:37,325 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-21 11:10:37,327 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-21 11:10:37,663 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-21 11:10:37,664 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2616 ms
+2022-11-21 11:10:41,623 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-11-21 11:10:41,811 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-21 11:10:41,820 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-11-21 11:10:41,951 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-11-21 11:10:42,061 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-11-21 11:10:42,075 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-11-21 11:10:42,141 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-11-21 11:10:42,141 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-11-21 11:10:42,141 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-11-21 11:10:42,142 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-11-21 11:10:42,142 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-11-21 11:10:42,143 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-11-21 11:10:42,144 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-11-21 11:10:42,499 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-11-21 11:10:42,503 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-11-21 11:10:42,507 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-21 11:10:42,513 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1669009242512 with initial instances count: 2
+2022-11-21 11:10:42,515 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application EMAIL-CONFIG with eureka with status UP
+2022-11-21 11:10:42,516 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1669009242516, current=UP, previous=STARTING]
+2022-11-21 11:10:42,520 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-CONFIG/senthil:EMAIL-CONFIG:8888: registering service...
+2022-11-21 11:10:42,520 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8888"]
+2022-11-21 11:10:42,556 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8888 (http) with context path ''
+2022-11-21 11:10:42,557 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8888
+2022-11-21 11:10:42,569 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-CONFIG/senthil:EMAIL-CONFIG:8888 - registration status: 204
+2022-11-21 11:10:43,308 INFO org.springframework.boot.StartupInfoLogger [main] Started SpringEmailConfigServerApplication in 10.272 seconds (JVM running for 11.795)
+2022-11-21 11:10:53,985 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(8)-127.0.0.1] Application shutdown requested.
+2022-11-21 11:10:53,985 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(8)-127.0.0.1] Unregistering application EMAIL-CONFIG with eureka with status DOWN
+2022-11-21 11:10:53,986 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(8)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1669009253986, current=DOWN, previous=UP]
+2022-11-21 11:10:53,986 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-CONFIG/senthil:EMAIL-CONFIG:8888: registering service...
+2022-11-21 11:10:53,999 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/EMAIL-CONFIG": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/EMAIL-CONFIG": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 21 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 34 more
+
+2022-11-21 11:10:53,999 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/EMAIL-CONFIG": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-11-21 11:10:54,010 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/EMAIL-CONFIG": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/EMAIL-CONFIG": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2022-11-21 11:10:54,010 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/EMAIL-CONFIG": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-11-21 11:10:54,012 WARN com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-CONFIG/senthil:EMAIL-CONFIG:8888 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-11-21 11:10:54,013 WARN com.netflix.discovery.InstanceInfoReplicator [DiscoveryClient-InstanceInfoReplicator-0] There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-11-21 11:10:54,236 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(8)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8888"]
+2022-11-21 11:10:54,237 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(8)-127.0.0.1] Stopping service [Tomcat]
+2022-11-21 11:10:54,248 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(8)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8888"]
+2022-11-21 11:10:54,254 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(8)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8888"]
+2022-11-21 11:10:54,269 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(8)-127.0.0.1] Shutting down DiscoveryClient ...
+2022-11-21 11:10:57,288 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(8)-127.0.0.1] Unregistering ...
+2022-11-21 11:10:57,620 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(8)-127.0.0.1] DiscoveryClient_EMAIL-CONFIG/senthil:EMAIL-CONFIG:8888 - deregister  status: 404
+2022-11-21 11:10:57,632 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(8)-127.0.0.1] Completed shut down of DiscoveryClient
+2022-11-21 11:11:01,756 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-11-21 11:11:01,779 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpringEmailConfigServerApplication using Java 11.0.16 on senthil with PID 12416 (C:\Users\SENTHILKUMARMAHESWAR\git\spring-mail-restapi\spring-email-config-server\target\classes started by SENTHILKUMARMAHESWAR in C:\Users\SENTHILKUMARMAHESWAR\git\spring-mail-restapi\spring-email-config-server)
+2022-11-21 11:11:01,782 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-21 11:11:01,784 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-21 11:11:03,242 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=7dace68e-6da0-352e-8e60-ef5f4437b8a1
+2022-11-21 11:11:03,594 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8888 (http)
+2022-11-21 11:11:03,611 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8888"]
+2022-11-21 11:11:03,612 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-21 11:11:03,612 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-21 11:11:03,816 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-21 11:11:03,816 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1961 ms
+2022-11-21 11:11:06,434 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-11-21 11:11:06,741 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-21 11:11:06,749 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-11-21 11:11:06,844 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-11-21 11:11:06,913 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-11-21 11:11:06,924 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-11-21 11:11:06,969 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-11-21 11:11:06,969 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-11-21 11:11:06,969 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-11-21 11:11:06,970 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-11-21 11:11:06,970 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-11-21 11:11:06,971 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-11-21 11:11:06,971 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-11-21 11:11:07,292 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-11-21 11:11:07,294 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-11-21 11:11:07,297 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-21 11:11:07,303 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1669009267302 with initial instances count: 0
+2022-11-21 11:11:07,304 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application EMAIL-CONFIG with eureka with status UP
+2022-11-21 11:11:07,305 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1669009267305, current=UP, previous=STARTING]
+2022-11-21 11:11:07,308 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-CONFIG/senthil:EMAIL-CONFIG:8888: registering service...
+2022-11-21 11:11:07,309 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8888"]
+2022-11-21 11:11:07,334 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8888 (http) with context path ''
+2022-11-21 11:11:07,334 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8888
+2022-11-21 11:11:07,374 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-CONFIG/senthil:EMAIL-CONFIG:8888 - registration status: 204
+2022-11-21 11:11:07,422 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8888-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-21 11:11:07,423 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8888-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-11-21 11:11:07,424 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8888-exec-1] Completed initialization in 1 ms
+2022-11-21 11:11:07,719 INFO org.springframework.boot.StartupInfoLogger [main] Started SpringEmailConfigServerApplication in 7.657 seconds (JVM running for 8.946)
+2022-11-21 11:11:23,007 INFO org.springframework.cloud.config.server.environment.NativeEnvironmentRepository [http-nio-8888-exec-1] Adding property source: Config resource 'file [C:\Users\SENTHI~1\AppData\Local\Temp\config-repo-7535902356807121687\EMAIL-API.yml]' via location 'file:/C:/Users/SENTHI~1/AppData/Local/Temp/config-repo-7535902356807121687/'
+2022-11-21 11:11:24,106 INFO org.springframework.cloud.config.server.environment.NativeEnvironmentRepository [http-nio-8888-exec-2] Adding property source: Config resource 'file [C:\Users\SENTHI~1\AppData\Local\Temp\config-repo-7535902356807121687\EMAIL-GATEWAY.yml]' via location 'file:/C:/Users/SENTHI~1/AppData/Local/Temp/config-repo-7535902356807121687/'
+2022-11-21 11:11:37,301 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Disable delta property : false
+2022-11-21 11:11:37,303 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Single vip registry refresh property : null
+2022-11-21 11:11:37,303 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Force full registry fetch : false
+2022-11-21 11:11:37,304 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application is null : false
+2022-11-21 11:11:37,304 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Registered Applications size is zero : true
+2022-11-21 11:11:37,305 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application version is -1: false
+2022-11-21 11:11:37,306 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Getting all instance registry info from the eureka server
+2022-11-21 11:11:37,336 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] The response status is 200
+2022-11-21 11:16:06,982 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 11:21:06,995 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 11:26:07,000 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 11:31:07,010 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 11:36:07,018 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 11:41:07,026 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 11:46:07,028 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 11:51:07,035 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 11:51:09,682 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(48)-127.0.0.1] Application shutdown requested.
+2022-11-21 11:51:09,683 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(48)-127.0.0.1] Unregistering application EMAIL-CONFIG with eureka with status DOWN
+2022-11-21 11:51:09,683 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(48)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1669011669683, current=DOWN, previous=UP]
+2022-11-21 11:51:09,684 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-CONFIG/senthil:EMAIL-CONFIG:8888: registering service...
+2022-11-21 11:51:09,692 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_EMAIL-CONFIG/senthil:EMAIL-CONFIG:8888 - registration status: 204
+2022-11-21 11:51:09,834 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(48)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8888"]
+2022-11-21 11:51:09,835 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(48)-127.0.0.1] Stopping service [Tomcat]
+2022-11-21 11:51:09,838 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(48)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-21 11:51:09,845 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(48)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8888"]
+2022-11-21 11:51:09,849 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(48)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8888"]
+2022-11-21 11:51:09,859 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(48)-127.0.0.1] Shutting down DiscoveryClient ...
+2022-11-21 11:51:09,860 WARN org.springframework.cloud.config.server.support.AbstractScmAccessor$1 [Thread-3] Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\SENTHI~1\AppData\Local\Temp\config-repo-7535902356807121687\.git\objects\pack\pack-cd7d9c33af206fca667f30599fec5e35354be5ae.idx
+2022-11-21 11:51:12,875 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(48)-127.0.0.1] Unregistering ...
+2022-11-21 11:51:12,888 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(48)-127.0.0.1] DiscoveryClient_EMAIL-CONFIG/senthil:EMAIL-CONFIG:8888 - deregister  status: 200
+2022-11-21 11:51:12,892 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(48)-127.0.0.1] Completed shut down of DiscoveryClient

@@ -17,6 +17,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
  * @author SENTHILKUMARMAHESWARAN
+ * 
+ * DESC : Storing all the template details in db
  *
  */
 @Entity

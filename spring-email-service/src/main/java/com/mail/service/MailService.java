@@ -36,7 +36,7 @@ import freemarker.template.TemplateException;
 @Service
 public class MailService {
 	@Autowired
-	private JavaMailSender sender;
+	private JavaMailSender mailSender;
 	@Autowired
 	private Configuration config;
 	@Autowired
@@ -47,65 +47,75 @@ public class MailService {
 	 * @param request - Contains all the details to send the mail
 	 * @param model - Has all the fields and its values as a key-value pair
 	 * @return MailResponse -returns the response of the mail
+	 * @throws TemplateNotFoundException - triggered when the template requested not found,
+	 * @throws FieldNotFoundException-triggered when the field entered not found
 	 */
-	public MailResponse sendEmail(MailRequest request,Map<String,Object> model) throws TemplateNotFoundException{
+	public MailResponse sendEmail(MailRequest request,Map<String,Object> model) throws TemplateNotFoundException,FieldNotFoundException{
 		
 		logger.info("Into sendmail method.....");
 		
-		MailResponse response =new MailResponse();
-		MimeMessage message=sender.createMimeMessage();
+		MailResponse customResponse =new MailResponse();
+		
+		//this creates a SmartMimeMessage, that holds default encoding and default FileTypeMap
+		MimeMessage message=mailSender.createMimeMessage();
+		
 		try {
-			MailTemplate template=templateService.findById(request.getTemplateid());
+			MailTemplate mailTemplate=templateService.findById(request.getTemplateid());
 			
-			if(template==null) {
-				logger.warn("Template not found exception is thrown...");
+			if(mailTemplate==null) {
+				logger.error("Template not found exception is thrown...");
 				throw new TemplateNotFoundException("Entered template does not exists");
 			}
 			
-			if(template.getFields().size()!=model.size()) {
-				logger.warn("Field not found exception is thrown - numbers differ...");
+			if(mailTemplate.getFields().size()!=model.size()) {
+				logger.error("Field not found exception is thrown - numbers differ...");
 				throw new FieldNotFoundException("Entered fields does not match the template");
 			}
 			
-			if(!checker(model,template.getFields())) {
-				logger.warn("Field not found exception is thrown - field unavailable...");
+			if(!checker(model,mailTemplate.getFields())) {
+				logger.error("Field not found exception is thrown - field unavailable...");
 				throw new FieldNotFoundException("Entered field is not available");	
 			}
 			
-			//set mediatype
-			MimeMessageHelper helper=new MimeMessageHelper(message,MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED,StandardCharsets.UTF_8.name());
-			//add attachment
+			//set mediatype 
+			//MimeMessageHelper - helps to setting up the email 
+			MimeMessageHelper mailDetails=new MimeMessageHelper(message,MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED,StandardCharsets.UTF_8.name());
 			
-			logger.info("Getting file path.....");
-			config.setDirectoryForTemplateLoading(new File(template.getPath()));
+			//add attachment
+			logger.info("Getting file path from db.....");
+			config.setDirectoryForTemplateLoading(new File(mailTemplate.getPath()));
 
 			logger.info("Getting template from the path.....");
-			Template t=config.getTemplate(template.getTemplatename()+".ftl");
+			Template template=config.getTemplate(mailTemplate.getTemplatename()+".ftl");
 			
 			logger.info("Filling templates with the provided field values.....");
-			String html=FreeMarkerTemplateUtils.processTemplateIntoString(t,model);
+			String mailBody=FreeMarkerTemplateUtils.processTemplateIntoString(template,model);
 			
 			logger.info("Retriving details from request and setting them to mail.....");
-			helper.setTo(request.getTo());
-			helper.setText(html,true);
-			helper.setSubject(request.getSub());
-			helper.setFrom(request.getFrom());
-			sender.send(message);
+			mailDetails.setTo(request.getTo());
+			/**
+			 * setText - Setting body for the mail
+			 */
+			mailDetails.setText(mailBody,true);
+			mailDetails.setSubject(request.getSub());
+			mailDetails.setFrom(request.getFrom());
+			
+			mailSender.send(message);
 			
 			logger.info("Retrived details. Sending.......");
 			
-			response.setMsg("mail send to: "+Arrays.toString(request.getTo()));
-			response.setStatus(Boolean.TRUE);
+			customResponse.setMsg("mail send to: "+Arrays.toString(request.getTo()));
+			customResponse.setStatus(Boolean.TRUE);
 			
 			logger.info("Sent successfully.....");
 			
 		}catch(MessagingException | IOException | TemplateException e) {
-			logger.warn("Exception is thrown while sending mail...");
-			response.setMsg("mail sending failure: "+request.getTo());
-			response.setStatus(Boolean.FALSE);
+			logger.error("Exception is thrown while sending mail...");
+			customResponse.setMsg("mail sending failure: "+request.getTo());
+			customResponse.setStatus(Boolean.FALSE);
 		}
 		logger.info("Sending response.....");
-		return response;
+		return customResponse;
 	}
 	
 	/**

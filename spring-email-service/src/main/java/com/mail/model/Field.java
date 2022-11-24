@@ -10,6 +10,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
  * @author SENTHILKUMARMAHESWARAN
+ * 
+ * DESC : Storing all the field details in db
  *
  */
 @Entity

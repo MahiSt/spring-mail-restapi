@@ -2,5 +2,6 @@ spring:
   application:
     name: EMAIL-API 
   config:
-    import: configserver:http://localhost:8888
+#    import: "optional:configserver:" #if the config server is running in 8888 this will work fine
+    import: configserver:http://${configserverhost}:${configport}
     

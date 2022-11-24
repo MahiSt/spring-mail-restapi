@@ -17,6 +17,11 @@ public class ApiConfig {
 
 	private Logger logger = LoggerFactory.getLogger(ApiConfig.class);
 	
+	/**
+	 * @return FreeMarkerConfigurationFactoryBean 
+	 * 
+	 * DESC - Configuring FreeMarker with the default pat for loading templates
+	 */
 	@Primary
 	@Bean
 	public FreeMarkerConfigurationFactoryBean factoryBean() {
